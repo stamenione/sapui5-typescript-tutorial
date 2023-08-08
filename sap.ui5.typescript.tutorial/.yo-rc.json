@@ -1,0 +1,17 @@
+{
+  "generator-ui5-ts-app": {
+    "namespace": "sap.ui5.typescript.tutorial",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.116.0",
+    "author": "Vladimir Vuckovic",
+    "initrepo": false,
+    "tstypes": "@openui5/types",
+    "tstypesVersion": "1.116.0",
+    "appId": "sap.ui5.typescript.tutorial",
+    "appURI": "sap/ui5/typescript/tutorial",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "gte11150": true,
+    "setupCompleted": true
+  }
+}
