@@ -1,3 +1,4 @@
+import { InputBase$ChangeEvent } from "sap/m/InputBase";
 import BaseController from "./BaseController";
 import JSONModel from "sap/ui/model/json/JSONModel";
 
@@ -23,5 +24,9 @@ export default class Main extends BaseController {
 		const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
 		const jsonData = await response.json() as WeatherInfo;
 		(this.getModel() as JSONModel).setData(jsonData);
+	}
+
+	locationChange(evt: InputBase$ChangeEvent) {
+		const location = evt.getParameters().value;
 	}
 }
