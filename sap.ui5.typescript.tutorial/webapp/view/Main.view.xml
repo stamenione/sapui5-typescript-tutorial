@@ -5,6 +5,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
 	xmlns:form="sap.ui.layout.form"
+	xmlns:cc="sap.ui5.typescript.tutorial.control"
 	core:require="{
 		formatter: 'sap/ui5/typescript/tutorial/model/formatter'
 	}">
@@ -24,6 +25,9 @@
 
 				<Label text="Wind Direction" />
 				<Text text="{/current_weather/winddirection} °" />
+
+				<Label text="Wind Visualization" />
+				<cc:WindDirection direction="{/current_weather/winddirection}" />
 			</form:SimpleForm>
 
 			<FormattedText class="sapUiResponsiveMargin" htmlText="&lt;a href='https://open-meteo.com/'&gt;Weather data by Open-Meteo.com&lt;/a&gt; under &lt;a href='https://creativecommons.org/licenses/by/4.0/'&gt;Attribution 4.0 International (CC BY 4.0)&lt;/a&gt; license" />

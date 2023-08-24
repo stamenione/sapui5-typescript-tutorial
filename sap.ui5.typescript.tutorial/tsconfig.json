@@ -13,7 +13,7 @@
 		"paths": {
 			"sap/ui5/typescript/tutorial/*": ["./webapp/*"],
 			"unit/*": ["./webapp/test/unit/*"],
-			"integration/*": ["./webapp/test/integration/*"]
+			"integration/*": ["./webapp/test/integration/*"],
 		}
 	},
 	"include": ["./webapp/**/*"],

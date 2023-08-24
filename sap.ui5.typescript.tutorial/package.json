@@ -1,4 +1,4 @@
-{
+ {
 	"name": "sap.ui5.typescript.tutorial",
 	"version": "1.0.0",
 	"description": "UI5 Application: sap.ui5.typescript.tutorial",
@@ -8,7 +8,7 @@
 		"clean": "rimraf dist coverage",
 		"build": "ui5 build --clean-dest",
 		"build:opt": "ui5 build self-contained --clean-dest --all",
-		"start": "node C:\\Users\\vvuckovi\\node_modules\\@ui\\cli\\bin\\ui5.cjs ui5 serve --port 8080 -o index.html",
+		"start": "node C:\\Users\\vvuckovi\\node_modules\\@ui5\\cli\\bin\\ui5.cjs ui5 serve --port 8080 -o index.html",
 		"start-cdn": "ui5 serve --port 8080 -o index-cdn.html",
 		"start:dist": "npm start -- --config ui5-dist.yaml",
 		"start:dist-cdn": "npm run start-cdn -- --config ui5-dist.yaml",
@@ -17,13 +17,15 @@
 		"karma": "node ./node_modules/karma/bin/karma karma start",
 		"karma-ci": "karma start karma-ci.conf.js",
 		"karma-ci-cov": "karma start karma-ci-cov.conf.js",
-		"test": "npm run lint && npm run karma-ci-cov"
+		"test": "npm run lint && npm run karma-ci-cov",
+		"generator": "node ./node_modules/@ui5/ts-interface-generator --watch"
 	},
 	"devDependencies": {
 		"@openui5/types": "1.116.0",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
 		"@typescript-eslint/parser": "^5.61.0",
 		"@ui5/cli": "^3.3.1",
+		"@ui5/ts-interface-generator": "^0.7.0",
 		"eslint": "^8.47.0",
 		"karma": "^6.4.2",
 		"karma-chrome-launcher": "^3.2.0",
